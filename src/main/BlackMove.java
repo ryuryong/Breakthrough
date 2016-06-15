@@ -8,12 +8,12 @@ public class BlackMove {
 
 	public static void ChosePawnB() {
 		
-		System.out.println("Wybierz czarny pionek (np 2c)");
+		System.out.println("Wybierz czarny pionek (np 7f)");
 		
 		Scanner BPawn = new Scanner(System.in);
 		String PawnLoc = BPawn.nextLine();
-		if (PawnLoc.length() < 2) {
-			System.out.println("B³êdny wyór, spróbuj ponownie");
+		if ((PawnLoc.length() < 2)||(PawnLoc.length() > 2)) {
+			System.out.println("B³êdny wybór, spróbuj ponownie");
 			ChosePawnB();
 		} else {
 			String J = String.valueOf(PawnLoc.charAt(1));

@@ -1,12 +1,12 @@
 package main;
 
-public class Board {												 // klasa odpowiedzialna za dzia³ania planszê //
+public class Board {												 
 
-	public static char[][] board = new char[10][10];				// tablica 9x9 pozwalaj¹ca na wypisanie zarówno nr pól jak i pionków //
+	public static char[][] board = new char[10][10];				
 	
 	public static void Boards(){
 		
-			board[0][1] = 'a'; 		board[9][1] = 'a';				// bolesne wypisywanie //
+			board[0][1] = 'a'; 		board[9][1] = 'a';				
 			board[0][2] = 'b';		board[9][2] = 'b';
 			board[0][3] = 'c';		board[9][3] = 'c';
 			board[0][4] = 'd';		board[9][4] = 'd';
@@ -25,7 +25,7 @@ public class Board {												 // klasa odpowiedzialna za dzia³ania planszê //
 		
 	}
 	
-	public static void Start(){ 									// pocz¹tkowe ustawienie pionków //
+	public static void Start(){ 									
 				
 		Main.BlackCount = 16;
 		Main.WhiteCount = 16;
@@ -49,7 +49,7 @@ public class Board {												 // klasa odpowiedzialna za dzia³ania planszê //
 		}
 	}
 	
-	public static void PrintBoard(){ 								// rysowanie tabeli z odstêpami //
+	public static void PrintBoard(){ 								
 		for (int i = 0; i < 10; i++){
 			for (int j = 0; j < 10; j++){
 				System.out.print("  " + board[i][j] + "  ");

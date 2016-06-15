@@ -12,8 +12,8 @@ public class WhiteMove {
 		
 		Scanner WPawn = new Scanner(System.in);
 		String PawnLoc = WPawn.nextLine();
-		if (PawnLoc.length() < 2) {
-			System.out.println("B³êdny wyór, spróbuj ponownie");
+		if ((PawnLoc.length() < 2)||(PawnLoc.length() > 2)) {
+			System.out.println("B³êdny wybór, spróbuj ponownie");
 			ChosePawnW();
 		} else {
 			String J = String.valueOf(PawnLoc.charAt(1));
